@@ -89,37 +89,41 @@
     {
         theNewColor = [NSColor whiteColor];
     }
-    if ([newColor isEqual: @"black"])
+    else if ([newColor isEqual: @"black"])
     {
         theNewColor = [NSColor blackColor];
     }
     
     // MARK: Red & Green & Blue
-    if ([newColor  isEqual: @"red"])
+    else if ([newColor  isEqual: @"red"])
     {
         theNewColor = [NSColor redColor];
     }
-    if ([newColor  isEqual: @"green"])
+    else if ([newColor  isEqual: @"green"])
     {
         theNewColor = [NSColor greenColor];
     }
-    if ([newColor  isEqual: @"blue"])
+    else if ([newColor  isEqual: @"blue"])
     {
         theNewColor = [NSColor blueColor];
     }
     
     // MARK: Cyan & Magenta & Yellow
-    if ([newColor  isEqual: @"cyan"])
+    else if ([newColor  isEqual: @"cyan"])
     {
         theNewColor = [NSColor cyanColor];
     }
-    if ([newColor  isEqual: @"magenta"])
+    else if ([newColor  isEqual: @"magenta"])
     {
         theNewColor = [NSColor magentaColor];
     }
-    if ([newColor  isEqual: @"yellow"])
+    else if ([newColor  isEqual: @"yellow"])
     {
         theNewColor = [NSColor yellowColor];
+    }
+    else
+    {
+        return;
     }
     
     label.textColor = theNewColor;
